@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="../css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="wrap">
+        <h1>自增长 TextArea</h1>
+
+        <div class="flex-text-wrap">
+            <pre><span></span><br/><br/></pre>
+            <textarea id="content" placeholder="输入内容…"></textarea></div>
+        <small>自动增长高度的TextArea</small>
+    </div>
+</body>
+</html>
+<script src="../js/jquery.js"></script>
+<script src="../js/jquery.flexText.js"></script>
+<script type="text/javascript">
+
+    $(function () {
+        $("#content").flexText();
+
+
+
+
+        var myVar = "3.14159",
+str = "" + myVar,//  to string
+int = ~~myVar,  //  to integer
+float = 1 * myVar,  //  to float
+bool = !!myVar,  /*  to boolean - any string with length
+and any number except 0 are true */
+array = [myVar];  //  to array
+    });
+
+</script>
